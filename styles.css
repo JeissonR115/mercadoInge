@@ -1,0 +1,111 @@
+
+
+:root {
+    /* Colores */
+    --color-main-text: #E0DCF4;
+    --color-secondary-text: #F7DDD8;
+
+    --color-title: #02733E;
+    --color-title-2: #01401C;
+
+    --color-link: #038C4C;
+    --color-bg: #0D0D0D;
+    --color-bg-2: #012611;
+
+    /* Tipografía */
+    --font-size-s: 0.622rem;
+    --font-size-ms: 0.933rem;
+    --font-size-m: 1.4rem;
+    --font-size-ml: 2.1rem;
+    --font-size-l: 3.1rem;
+    --font-size-xl: 4.0rem;
+
+    --font-family-primary: 'Nothing You Could Do', cursive;
+    --font-family-secondary: 'Victor Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-main-text);
+    font-family: var(--font-family-secondary);
+    font-style: normal;
+    font-size: var(--font-size-m);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-title);
+    text-align: center;
+    font-family: var(--font-family-primary);
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: var(--font-size-xl);
+}
+
+h2 {
+    font-size: var(--font-size-l);
+}
+
+h3 {
+    font-size: var(--font-size-ml);
+    color: var(--color-title-2);
+}
+
+a {
+    font-family: var(--font-family-secondary);
+    text-decoration: underline;
+    color: var(--color-link);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+/* header */
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* main */
+main {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
