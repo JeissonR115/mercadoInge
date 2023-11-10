@@ -22,6 +22,16 @@
 
     --font-family-primary: 'Nothing You Could Do', cursive;
     --font-family-secondary: 'Victor Mono', monospace;
+
+    /* medidas */
+    --size-xs:5px;
+    --size-s: 10px;
+    --size-ms: 20px;
+    --size-m: 40px;
+    --size-ml: 80px;
+    --size-l: 160px;
+    --size-xl: 320px;
+    --size-xxl: 640px:
 }
 
 * {
@@ -88,7 +98,7 @@ img {
 
 /* header */
 header {
-    height: 150px;
+    height: var(--size-ml);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -103,7 +113,7 @@ main {
 
 /* footer */
 footer {
-    padding: 40px 10px;
+    padding: var(--size-m) var(--size-s);
     display: flex;
     flex-direction: row;
     justify-content: space-around;

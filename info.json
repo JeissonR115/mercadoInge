@@ -1,0 +1,19 @@
+{
+    "menu__list": [
+        {
+            "classModifier": "-active",
+            "href": "/",
+            "value": "Home"
+        },
+        {
+            "classModifier": "",
+            "href": "/about",
+            "value": "About"
+        },
+        {
+            "classModifier": "",
+            "href": "/contact",
+            "value": "Contact"
+        }
+    ]
+}
