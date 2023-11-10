@@ -11,7 +11,8 @@ export const createMenuItem = ({classModifier = "", elementContent}) => {
 export const createMenuList = ({parent,listItems}) => {
     listItems.forEach((navItem,i=0) => {
       const element = createButton(navItem)
-      const menuItemElement = createMenuItem({classModifier:i,elementContent:element});
+      console.log(navItem.classModifier)
+      const menuItemElement = createMenuItem({classModifier:navItem.classModifier,elementContent:element});
       parent.appendChild(menuItemElement)
     });
 }

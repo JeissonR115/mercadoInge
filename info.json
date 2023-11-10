@@ -1,19 +1,19 @@
 {
     "menu__list": [
         {
-            "classModifier": "-active",
-            "href": "/",
+            "classModifier": "active",
+            "href": "./index.html",
             "value": "Home"
         },
         {
-            "classModifier": "-active",
-            "href": "/",
-            "value": "Home"
+            "classModifier": "aboutProject",
+            "href": "./pages/aboutProject.html",
+            "value": "Nuestro Proyecto"
         },
         {
-            "classModifier": "-active",
-            "href": "/",
-            "value": "Home"
+            "classModifier": "aboutUs",
+            "href": "./pages/aboutUs.html",
+            "value": "Nosotros"
         },
         {
             "classModifier": "-active",

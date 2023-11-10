@@ -1,37 +1,55 @@
-.button__container {
+.button__container,
+.button__container * {
+    /* Colores */
+    --color-text: var(--color-main-text);
+    --color-primary: var(--color-title-2);
+    --color-secondary: var(--color-link);
+    --color-background: var(--color-bg);
+
+    /* Tipografía */
+    --font-size: var(--font-size-ms);
+    --font-family: var(--font-family-secondary);
     
-    background-color: var(--color-bg);
+    /* Tamaños */
+    --size-width: var(--size-l);
+    --size-height: var(--size-m);
+    --size-padding: var(--size-s);
+    --size-dashoffset: calc(var(--size-width) / 1.3);
+}
+
+.button__container {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    background-color: var(--color-background);
 }
 
 .button {
     width: 100%;
-    max-width: var(--size-l) ;
-    height: var(--size-m);
-    padding: var(--size-s);
+    max-width: var(--size-width);
+    height: var(--size-height);
+    padding: var(--size-padding);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 1rem;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-weight: 600;
     line-height: 2.5rem;
     letter-spacing: 0.3rem;
-    font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-
-    color: var(--color-main-text);
+    color: var(--color-text);
     cursor: pointer;
     transition: all 0.5s ease-in;
 }
 
 .button:hover {
-    color: var(--color-link);
+    color: var(--color-secondary);
 }
 
 .button svg {
@@ -44,7 +62,7 @@
 
 .button rect {
     fill: none;
-    stroke: var(--color-main-text);
+    stroke: var(--color-text);
     stroke-width: 2;
     stroke-dasharray: 450, 0;
     transition: all 0.5s linear;
@@ -53,7 +71,7 @@
 .button:hover rect {
     stroke-width: 5px;
     stroke-dasharray: 20, 300;
-    stroke-dashoffset: calc( var(--size-l) / 2)  ;
-    stroke: var(--color-title-2);
+    stroke-dashoffset: var(--size-dashoffset);
+    stroke: var(--color-primary);
     transition: all 0.8s cubic-bezier(0.22, 1, 0.25, 1);
 }
