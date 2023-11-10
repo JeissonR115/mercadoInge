@@ -1,7 +1,10 @@
 /* Base styles */
 .menu {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    width: 60%;
+    max-width: 1500px;
 }
 
 /* Mobile styles */
@@ -25,7 +28,7 @@
         transition: all 0.5s;
     }
 
- 
+
 
     .menu__list {
         min-width: 100vw;
@@ -77,10 +80,15 @@
     }
 
     .menu .menu__list {
+        width: 100%;
         display: flex !important;
         flex-direction: row;
         justify-content: space-evenly;
-        gap: 20px;
+    }
+    .menu__item{
+        width: 100%;
+        
+        margin: var(--size-s);
     }
     .menu__item a {
         font-size: var(--font-size-m);

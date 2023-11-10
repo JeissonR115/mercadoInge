@@ -9,20 +9,24 @@
 }
 
 .button {
-    color: var(--color-main-text);
-    cursor: pointer;
-    font-size: 1rem;
-    line-height: 2.5rem;
-    width: var(--size-l) ;
+    width: 100%;
+    max-width: var(--size-l) ;
     height: var(--size-m);
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
+    padding: var(--size-s);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: var(--color-main-text);
+    cursor: pointer;
     transition: all 0.5s ease-in;
 }
 
