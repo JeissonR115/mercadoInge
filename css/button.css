@@ -9,7 +9,7 @@
 }
 
 .button {
-    color: #fff;
+    color: var(--color-main-text);
     cursor: pointer;
     font-size: 1rem;
     line-height: 2.5rem;
@@ -27,7 +27,7 @@
 }
 
 .button:hover {
-    color: #FF9950;
+    color: var(--color-link);
 }
 
 .button svg {
@@ -40,7 +40,7 @@
 
 .button rect {
     fill: none;
-    stroke: #fff;
+    stroke: var(--color-main-text);
     stroke-width: 2;
     stroke-dasharray: 450, 0;
     transition: all 0.5s linear;
@@ -50,6 +50,6 @@
     stroke-width: 5px;
     stroke-dasharray: 20, 300;
     stroke-dashoffset: calc( var(--size-l) / 2)  ;
-    stroke: #FF9950;
+    stroke: var(--color-title-2);
     transition: all 0.8s cubic-bezier(0.22, 1, 0.25, 1);
 }

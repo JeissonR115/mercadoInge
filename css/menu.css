@@ -25,10 +25,7 @@
         transition: all 0.5s;
     }
 
-    .menu__list.visible~.menu__icon span {
-        transform: rotateY(180deg);
-        transition: all 0.5s;
-    }
+ 
 
     .menu__list {
         min-width: 100vw;
