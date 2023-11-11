@@ -84,7 +84,7 @@ ul {
     list-style: none;
 }
 
-img {
+.img img {
     width: 100%;
 }
 
@@ -127,7 +127,6 @@ footer {
     .header {
         position: sticky;
         top: 0;
-        width: 100vw;
         background: var(--color-bg);
     }
 }

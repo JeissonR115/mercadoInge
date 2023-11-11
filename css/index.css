@@ -1,9 +1,39 @@
-.summary{
-    width: 100%;
-    background-color: var(--color-bg-2);
+main>*{
+    width: 70%;
+    margin: auto;
 }
-.summary__list {
-    width: 100%;
-    padding: 0 10%;
+.main__p{
+    font-size: var(--font-size-ml);
+    text-align: center;
+
+    margin: 50px auto;
     
+}
+.proyect{
+    min-width: 300px;
+    background: #00000026;
+    border: 2px solid var(--color-title-2);
+    padding: 80px;
+    margin: 100px auto;
+    border-radius: 20px;
+}
+.proyect>div{
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid  var(--color-bg-2);
+}
+.what-is__img img{
+    max-width: 600px;
+    margin: auto;
+}
+.methodology__phases{
+    width: 80%;
+    margin: auto;
+}
+.team__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }

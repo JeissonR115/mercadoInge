@@ -4,8 +4,7 @@ const createCardElement = (
         classModifier = "",
         title = "",
         description = "",
-        img = {},
-        a = {}
+        img = {}
     }
 ) => {
     const className = "card"
@@ -25,19 +24,19 @@ const createCardElement = (
     imageElement.alt = img.alt;
 
     const imageContainerElement = document.createElement("div");
-    imageContainerElement.classList.add(`${className}__img`);
+    imageContainerElement.classList.add(`${className}__img`,"img");
     imageContainerElement.appendChild(imageElement);
 
-    const buttonElement = createButton({
-        classModifier: classModifier,
-        href: a.href,
-        value: a.value
-    });
+    // const buttonElement = createButton({
+    //     classModifier: classModifier,
+    //     href: a.href,
+    //     value: a.value
+    // });
 
     cardElement.appendChild(titleElement);
     cardElement.appendChild(descriptionElement);
     cardElement.appendChild(imageContainerElement);
-    cardElement.appendChild(buttonElement);
+    // cardElement.appendChild(buttonElement);
 
     return cardElement;
 }
@@ -47,8 +46,7 @@ export const createCardList = ({ parent, listItems }) => {
             classModifier: item.classModifier,
             title:item.title,
             description:item.description,
-            img:{href:item.img.href,alt:item.img.alt},
-            a:{href:item.a.href,value:item.a.value}
+            img:{href:item.img.href,alt:item.img.alt}
         })
         parent.appendChild(menuItemElement)
     });

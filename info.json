@@ -6,13 +6,13 @@
             "value": "Inicio"
         },
         {
-            "classModifier": "aboutProject",
-            "href": "./pages/aboutProject.html",
+            "classModifier": "project",
+            "href": "#proyect",
             "value": "Proyecto"
         },
         {
-            "classModifier": "aboutUs",
-            "href": "./pages/aboutUs.html",
+            "classModifier": "team",
+            "href": "#team",
             "value": "Nosotros"
         }
     ],
