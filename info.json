@@ -7,12 +7,12 @@
         },
         {
             "classModifier": "project",
-            "href": "#proyect",
+            "href": "./#proyect",
             "value": "Proyecto"
         },
         {
             "classModifier": "team",
-            "href": "#team",
+            "href": "./#team",
             "value": "Nosotros"
         }
     ],
