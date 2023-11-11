@@ -5,12 +5,12 @@
     --color-main-text: #E0DCF4;
     --color-secondary-text: #F7DDD8;
 
-    --color-title: #02733E;
-    --color-title-2: #01401C;
+    --color-title: #b51a2a;
+    --color-title-2: #ffa485;
 
-    --color-link: #038C4C;
-    --color-bg: #0D0D0D;
-    --color-bg-2: #012611;
+    --color-link: rgb(245, 133, 96);
+    --color-bg: #16182f;
+    --color-bg-2: #292f49;
 
     /* Tipografía */
     --font-size-s: 0.622rem;

@@ -28,8 +28,9 @@
 
 .button {
     width: 100%;
-    max-width: var(--size-width);
-    height: var(--size-height);
+    max-width: var(--size-width); 
+    min-height: var(--size-height);
+    max-height: 100%;
     padding: var(--size-padding);
     position: relative;
     display: flex;

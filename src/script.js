@@ -1,16 +1,14 @@
 import { createMenuList, hideAndShowMenu} from './menu.js'
+import { createCardList} from './card.js'
 const response = await fetch("https://raw.githubusercontent.com/JeissonR115/mercadoInge/main/info.json");
 const data = await response.json();
 
 const menuListElement = document.querySelector(".menu__list");
 const menuIconElement = document.querySelector(".menu__icon");
 
-if (menuListElement && menuIconElement) {
-  menuIconElement.addEventListener("click",()=>{hideAndShowMenu({clickElement:menuIconElement,affectedElement:menuListElement})} );
-} else {
-  console.error("Menu element or menu icon not found in the document.");
-}
+menuIconElement.addEventListener("click",()=>{hideAndShowMenu({clickElement:menuIconElement,affectedElement:menuListElement})} );
+createMenuList({parent:menuListElement, listItems: data["menu__list"]})
 
-
-const navItems = data["menu__list"];
-createMenuList({parent:menuListElement, listItems:navItems})
+const summaryListElement = document.querySelector(".summary__list");
+const summaryItems = data["summary__list"];
+createCardList({parent: summaryListElement, listItems:summaryItems})

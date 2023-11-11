@@ -18,6 +18,45 @@
     ],
     "summary__list":[
         {
+            "classModifier": "Shrek",
+            "title":"Shrek",
+            "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "img":{
+                "href":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL7I7cp-ruP50fKtH0jQKGCPqP7XT-IvqJRQ&usqp=CAU",
+                "alt":"imagen de Shrek"
+            },
+            "a":{
+                "href":"./pages/aboutProject.html",
+                "value":"go to shrek"
+            }
+
+        },
+        {
+            "classModifier": "aboutUs",
+            "title":"Nosotros",
+            "description":"un resumen muy brebe del equipo de trabajo",
+            "img":{
+                "href":"./pictures/img.jpg",
+                "alt":"imagen del equipo"
+            },
+            "a":{
+                "href":"./pages/aboutUs.html",
+                "value":"Nosotros"
+            }
+
+        },
+        {
+            "classModifier": "aboutUs",
+            "title":"Nosotros",
+            "description":"un resumen muy brebe del equipo de trabajo",
+            "img":{
+                "href":"./pictures/img.jpg",
+                "alt":"imagen del equipo"
+            },
+            "a":{
+                "href":"./pages/aboutUs.html",
+                "value":"Nosotros"
+            }
 
         }
     ]
