@@ -8,27 +8,17 @@
         {
             "classModifier": "aboutProject",
             "href": "./pages/aboutProject.html",
-            "value": "Nuestro Proyecto"
+            "value": "Proyecto"
         },
         {
             "classModifier": "aboutUs",
             "href": "./pages/aboutUs.html",
             "value": "Nosotros"
-        },
+        }
+    ],
+    "summary__list":[
         {
-            "classModifier": "-active",
-            "href": "/",
-            "value": "Home"
-        },
-        {
-            "classModifier": "",
-            "href": "/about",
-            "value": "About"
-        },
-        {
-            "classModifier": "",
-            "href": "/contact",
-            "value": "Contact"
+
         }
     ]
 }
