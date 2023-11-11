@@ -11,7 +11,6 @@ export const createMenuItem = ({classModifier = "", elementContent}) => {
 export const createMenuList = ({parent,listItems}) => {
     listItems.forEach((navItem,i=0) => {
       const element = createButton(navItem)
-      console.log(navItem.classModifier)
       const menuItemElement = createMenuItem({classModifier:navItem.classModifier,elementContent:element});
       parent.appendChild(menuItemElement)
     });
@@ -21,12 +20,12 @@ export const hideAndShowMenu = ({clickElement, affectedElement}) => {
     affectedElement.classList.toggle("no-visible");
 
     if (affectedElement.classList.contains("no-visible")) {
-        clickElement.style.transform = "rotateY(0deg)";
+        clickElement.querySelector('span').style.transform = "rotateY(0deg)";
         setTimeout(() => {
             affectedElement.style.display = "none";
         }, 250);
     } else {
-        clickElement.style.transform = "rotateY(180deg)";
+        clickElement.querySelector('span').style.transform = "rotateY(180deg)";
         affectedElement.style.display = "flex";
     }
 }

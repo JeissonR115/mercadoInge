@@ -3,7 +3,7 @@
         {
             "classModifier": "active",
             "href": "./index.html",
-            "value": "Home"
+            "value": "Inicio"
         },
         {
             "classModifier": "aboutProject",
@@ -16,48 +16,74 @@
             "value": "Nosotros"
         }
     ],
-    "summary__list":[
+    "summary__list": [
         {
             "classModifier": "Shrek",
-            "title":"Shrek",
-            "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-            "img":{
-                "href":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL7I7cp-ruP50fKtH0jQKGCPqP7XT-IvqJRQ&usqp=CAU",
-                "alt":"imagen de Shrek"
+            "title": "Shrek",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "img": {
+                "href": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL7I7cp-ruP50fKtH0jQKGCPqP7XT-IvqJRQ&usqp=CAU",
+                "alt": "imagen de Shrek"
             },
-            "a":{
-                "href":"./pages/aboutProject.html",
-                "value":"go to shrek"
+            "a": {
+                "href": "./pages/aboutProject.html",
+                "value": "go to shrek"
             }
-
         },
         {
             "classModifier": "aboutUs",
-            "title":"Nosotros",
-            "description":"un resumen muy brebe del equipo de trabajo",
-            "img":{
-                "href":"./pictures/img.jpg",
-                "alt":"imagen del equipo"
+            "title": "Nosotros",
+            "description": "un resumen muy brebe del equipo de trabajo",
+            "img": {
+                "href": "./pictures/img.jpg",
+                "alt": "imagen del equipo"
             },
-            "a":{
-                "href":"./pages/aboutUs.html",
-                "value":"Nosotros"
+            "a": {
+                "href": "./pages/aboutUs.html",
+                "value": "Nosotros"
             }
-
         },
         {
             "classModifier": "aboutUs",
-            "title":"Nosotros",
-            "description":"un resumen muy brebe del equipo de trabajo",
-            "img":{
-                "href":"./pictures/img.jpg",
-                "alt":"imagen del equipo"
+            "title": "Nosotros",
+            "description": "un resumen muy brebe del equipo de trabajo",
+            "img": {
+                "href": "./pictures/img.jpg",
+                "alt": "imagen del equipo"
             },
-            "a":{
-                "href":"./pages/aboutUs.html",
-                "value":"Nosotros"
+            "a": {
+                "href": "./pages/aboutUs.html",
+                "value": "Nosotros"
             }
-
+        }
+    ],
+    "members__list": [
+        {
+            "classModifier": "Angel",
+            "title": "Angel Molina",
+            "description": "Joven activo y social con 19 años. Listo para mejorar en el campo del Desarrollo de Software en sus lenguajes como java; haciendo uso de herramientas como Vs code.",
+            "img": {
+                "href": "./pictures/manager.png",
+                "alt": "imagen de Shrek"
+            }
+        },
+        {
+            "classModifier": "Jeisson",
+            "title": "Jeisson Rodriguez",
+            "description": "Joven desarrollador con 18 años. Listo para seguir avanzando en el campo del Desarrollo de Software en sus lenguajes y campos; haciendo uso de herramientas y conocimientos especialisados en el ambito de la tecnologìa.",
+            "img": {
+                "href": "/pictures/developer.png",
+                "alt": "imagen de Shrek"
+            }
+        },
+        {
+            "classModifier": "Kevin",
+            "title": "Alejandro Ramirez",
+            "description": "Joven creativo con 21 años. Dispuesto a avanzar y experimentar en el gran campo del software tanto en sus lenguajes como java, javaScript, html, css; haciendo uso de herramientas como Vs code y desarrollo en Frontend y con cursos en el ambito sistematico.",
+            "img": {
+                "href": "./pictures/designer.png",
+                "alt": "imagen de Shrek"
+            }
         }
     ]
 }
