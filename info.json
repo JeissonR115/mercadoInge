@@ -72,7 +72,7 @@
             "title": "Jeisson Rodriguez",
             "description": "Joven desarrollador con 18 años. Listo para seguir avanzando en el campo del Desarrollo de Software en sus lenguajes y campos; haciendo uso de herramientas y conocimientos especialisados en el ambito de la tecnologìa.",
             "img": {
-                "href": "/pictures/developer.png",
+                "href": "./pictures/developer.png",
                 "alt": "imagen de Shrek"
             }
         },
