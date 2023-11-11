@@ -64,7 +64,7 @@
             "description": "Joven activo y social con 19 años. Listo para mejorar en el campo del Desarrollo de Software en sus lenguajes como java; haciendo uso de herramientas como Vs code.",
             "img": {
                 "href": "./pictures/manager.png",
-                "alt": "imagen de Shrek"
+                "alt": "imagen de Angel"
             }
         },
         {
@@ -73,7 +73,7 @@
             "description": "Joven desarrollador con 18 años. Listo para seguir avanzando en el campo del Desarrollo de Software en sus lenguajes y campos; haciendo uso de herramientas y conocimientos especialisados en el ambito de la tecnologìa.",
             "img": {
                 "href": "./pictures/developer.png",
-                "alt": "imagen de Shrek"
+                "alt": "imagen de jeisson"
             }
         },
         {
@@ -82,7 +82,7 @@
             "description": "Joven creativo con 21 años. Dispuesto a avanzar y experimentar en el gran campo del software tanto en sus lenguajes como java, javaScript, html, css; haciendo uso de herramientas como Vs code y desarrollo en Frontend y con cursos en el ambito sistematico.",
             "img": {
                 "href": "./pictures/designer.png",
-                "alt": "imagen de Shrek"
+                "alt": "imagen de Kevin"
             }
         }
     ]
