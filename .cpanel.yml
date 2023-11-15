@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home4/mercadoinge.jeissonr115.com
+    - export DEPLOYPATH=/home4/jeissonr/mercadoinge.jeissonr115.com
     - /bin/cp -r */ $DEPLOYPATH/
