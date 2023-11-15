@@ -1,0 +1,23 @@
+## VisualStudioCode ###
+.vscode/*
+.history/
+*.vsix
+.history
+.ionide
+
+### Images ###
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# database
+*.png
+*.jpg
+
+server/*
+db.config.php
+
