@@ -18,6 +18,5 @@
 *.png
 *.jpg
 
-server/*
 db.config.php
 
