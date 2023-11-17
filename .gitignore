@@ -5,18 +5,6 @@
 .history
 .ionide
 
-### Images ###
-# JPEG
-*.jpg
-*.jpeg
-*.jpe
-*.jif
-*.jfif
-*.jfi
-
-# database
-*.png
-*.jpg
 
 db.config.php
 
