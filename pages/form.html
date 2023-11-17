@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,23 @@
 
     <title>Login</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <form class="form" action="/server/form.php" method="post"  >
+        <form class="form" action="/server/form.php" method="post">
             <h1 class="title">Inicio</h1>
             <div class="inp">
-                <input id="email" type="text" name="email" class="input" placeholder="Usuario" required>
+                <input id="email" type="text" name="email" class="input" placeholder="Email"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                    title="ingresa un email valido"
+                    required>
                 <i class="fa-solid fa-user"></i>
             </div>
             <div class="inp">
-                <input id="password" type="number" name="password" class="input" placeholder="Contraseña" required>
+                <input id="password" type="password" name="password" class="input" placeholder="Contraseña"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres."
+                    required>
                 <i class="fa-solid fa-lock"></i>
             </div>
             <input class="submit" type="submit" value="Iniciar Sesión">
@@ -33,4 +41,5 @@
         </div>
     </div>
 </body>
+
 </html>
