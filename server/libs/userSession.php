@@ -5,10 +5,10 @@ class UserSession
     {
         session_start();
     }
-    public function setCurrentUser(string $user) :void{
+    public function setCurrentUser(string $user){
         $_SESSION['user'] = $user;
     }
-    public function getCurrentUser() :string{
+    public function getCurrentUser(){
         return $_SESSION['user'];
     }
     public function closeSession() :bool{

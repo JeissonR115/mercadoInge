@@ -14,12 +14,10 @@
 
 <body>
     <div class="wrapper">
-        <form class="form" action="/server/login.php" method="post">
+        <form class="form" action="/server/index.php" method="post">
             <h1 class="title">Inicio</h1>
             <div class="inp">
-                <input id="email" type="text" name="email" class="input" placeholder="Email"
-                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                    title="ingresa un email valido"
+                <input id="email" type="text" name="emailOrUser" class="input" placeholder="Username o Email"
                     required>
                 <i class="fa-solid fa-user"></i>
             </div>
@@ -40,5 +38,6 @@
         </div>
     </div>
 </body>
+<script src="../src/form.js"></script>
 
 </html>

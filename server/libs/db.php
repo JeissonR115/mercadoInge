@@ -16,10 +16,11 @@ class DB
         $this->user = $dbConfig['user'];
         $this->password = $dbConfig['password'];
         $this->db = $dbConfig['database'];
-        $this->charset = 'CHARSET';
+        $this->charset = $dbConfig['charset']; 
     }
+    
 
-    function connect()
+    public function connect()
     {
         try {
             $connection = "mysql:host=" . $this->host . ";dbname=" . $this->db . ";charset=" . $this->charset;
