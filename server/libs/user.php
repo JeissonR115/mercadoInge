@@ -10,7 +10,6 @@ class User extends DB{
 
         return ($query->rowCount()) ? true: false; 
     }
-    
     public function setUser( $emailOrName ) {
         $column = filter_var($emailOrName, FILTER_VALIDATE_EMAIL) ? 'email_usuario' : 'nombre_usuario';
         $query =$this->connect()->prepare("SELECT * FROM usuario WHERE $column= :emailOrName");
