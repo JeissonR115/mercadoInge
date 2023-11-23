@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../pictures/logo/ico/icono_oscuro.ico">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="form" action="/server/singup.php" method="post">
+            <h1 class="title">Inicio</h1>
+            <div class="inp">
+                <input id="email" type="text" name="emailOrUser" class="input" placeholder="Username o Email"
+                    required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inp">
+                <input id="password" type="password" name="password" class="input" placeholder="Contraseña"
+                    title="Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres."
+                    required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <input class="submit" type="submit" value="Iniciar Sesión">
+            <p class="footer">¿No tienes cuenta?
+                <a href="#" class="link">Por favor, Regístrate</a>
+            </p>
+        </form>
+        <div></div>
+        <div class="banner">
+            <img class="logo" src="../pictures/logo/png/logo_claro_unicolor.png" alt="">
+        </div>
+    </div>
+</body>
+<script src="../src/form.js"></script>
+
+</html>
