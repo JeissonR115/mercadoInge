@@ -11,14 +11,14 @@ if (isset($_SESSION['user'])) {
 } elseif (isset($_POST['emailOrUser']) && isset($_POST['password'])) {
     $emailOrUserForm = $_POST['emailOrUser'];
     $passwordForm = $_POST['password'];
-    if ($user->userExist($emailOrUserForm, $passwordForm)) {
+    if ($user->userLogin($emailOrUserForm, $passwordForm)) {
         $userSession->setCurrentUser($emailOrUserForm);
         $user->setUser($emailOrUserForm);
         header("Location: /pages/about-us.html");
     } else {
-        header("Location: /pages/form.html?error=1");
+        header("Location: /pages/login.html?error=1");
     }
 } else {
-    header("Location: /pages/form.html");
+    header("Location: /pages/login.html");
     exit(); 
 }

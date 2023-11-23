@@ -9,27 +9,35 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../pictures/logo/ico/icono_oscuro.ico">
 
-    <title>Login</title>
+    <title>SingUp</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <form class="form" action="/server/singup.php" method="post">
-            <h1 class="title">Inicio</h1>
+        <form class="form" action="/server/singUp.php" method="post">
+            <h1 class="title">SingUp</h1>
             <div class="inp">
-                <input id="email" type="text" name="emailOrUser" class="input" placeholder="Username o Email"
-                    required>
+                <input id="email" type="text" name="email" class="input" placeholder="Email"
+                    title="Por favor, ingresa una dirección de correo electrónico válida."
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                 <i class="fa-solid fa-user"></i>
             </div>
             <div class="inp">
-                <input id="password" type="password" name="password" class="input" placeholder="Contraseña"
-                    title="Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres."
-                    required>
+                <input id="username" type="text" name="username" class="input" placeholder="Username"
+                    title="El nombre de usuario no debe contener espacios ni caracteres especiales."
+                    pattern="^[a-zA-Z0-9_]+$" required>
                 <i class="fa-solid fa-lock"></i>
             </div>
-            <input class="submit" type="submit" value="Iniciar Sesión">
-            <p class="footer">¿No tienes cuenta?
-                <a href="#" class="link">Por favor, Regístrate</a>
+            <div class="inp">
+                <input id="password" class="input" name="password" type="password" placeholder="Contraseña"
+                    title="La contraseña debe cumplir con los siguientes requisitos: - Al menos 4 caracteres de longitud. - Al menos una letra mayúscula. - Al menos una letra minúscula. - Al menos un número."
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <input class="submit" type="submit" value="Crear Sesión">
+            <p class="footer">¿ya tienes cuenta?
+                <a href="./login.html" class="link">Por favor, Inicia sesión</a>
             </p>
         </form>
         <div></div>

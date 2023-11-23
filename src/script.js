@@ -7,7 +7,7 @@ const menuListElement = document.querySelector(".menu__list");
 const menuIconElement = document.querySelector(".menu__icon");
 
 menuIconElement.addEventListener("click",()=>{hideAndShowMenu({clickElement:menuIconElement,affectedElement:menuListElement})} );
-createMenuList({parent:menuListElement, listItems: data["menu__list"]})
+// createMenuList({parent:menuListElement, listItems: data["menu__list"]})
 
 const summaryListElement = document.querySelector(".team__list");
 const summaryItems = data["members__list"];

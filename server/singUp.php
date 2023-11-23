@@ -1,24 +1,18 @@
-<?php
-include_once 'libs/user.php';
-include_once 'libs/userSession.php';
+    <?php
+    include_once 'libs/user.php';
+    include_once 'libs/userSession.php';
 
-$user = new User();
-$userSession = new UserSession();
-// Verificar si hay un usuario en sesión
-if (isset($_SESSION['user'])) {
-    $user->setUser($userSession->getCurrentUser());
-    header("Location: /pages/about-us.html");
-} elseif (isset($_POST['emailOrUser']) && isset($_POST['password'])) {
-    $emailOrUserForm = $_POST['emailOrUser'];
-    $passwordForm = $_POST['password'];
-    if ($user->userExist($emailOrUserForm, $passwordForm)) {
-        $userSession->setCurrentUser($emailOrUserForm);
-        $user->setUser($emailOrUserForm);
-        header("Location: /pages/about-us.html");
-    } else {
-        header("Location: /pages/singUp.html?error=1");
+    // Obtener datos del formulario
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+    $name = isset($_POST['username']) ? $_POST['username'] : '';
+    $password = isset($_POST['password']) ? $_POST['password'] : '';
+
+    // Validación de entrada
+    $user = new User();
+    if (!$user->userExist($name) && !$user->userExist($email)) {
+        $user->addUser($name, $email, $password);
+        header("Location: /pages/login.html");
     }
-} else {
-    header("Location: /pages/singUp.htm");
-    exit(); 
-}
+   
+    echo '<script>alert("El usuario ya existe."); window.location.href = "/pages/signUp.html";</script>';
+
