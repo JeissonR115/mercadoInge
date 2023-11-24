@@ -127,7 +127,7 @@ footer {
 @media (width >=768px) {
     .header {
         position: sticky;
-        top: 0;
+        top: -1px;
         background: var(--color-bg);
     }
 }

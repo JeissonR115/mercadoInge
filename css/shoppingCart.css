@@ -1,0 +1,135 @@
+.contenedor {
+    min-width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid var(--color-title-2);
+    box-shadow: 0 0 20px 0 var(--color-title-2);
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-producto {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-texto{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 200px);
+    min-width: 200px;
+    justify-content: space-around;
+    
+}
+.contenedor-img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.img-p {
+    width: 100%;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: var(--color-title-2);
+    font-size: 15px;
+}
+
+.cantidad {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.stock {
+    color: var(--color-title-2);
+    width: 50%;
+    height: auto;
+    font-family: var(--font-family-primary);
+    text-align: center;
+    border-radius: 0 10px 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+
+    border: 1px solid var(--color-title-2);
+    box-shadow: 0 0 10px 0 var(--color-title-2);
+}
+
+.contenedor-botoenes {
+    width: 30%;
+    max-width: 500px;
+    min-width: 250px;
+
+    height: 50%;
+    max-height: 800px;
+    padding: 20px;
+    background-color: #ffa486;
+
+    border: 1px solid var(--color-bg);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 var(--color-title-2);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.loguito {
+    width: 100%;
+}
+
+.botoncitos {
+    width: 60%;
+    height: auto;
+    color: var(--color-title-2);
+
+    border-radius: 0 20px 0 20px;
+    border: 1px solid var(--color-bg);
+    box-shadow: 0 0 10px 0 var(--color-bg-2);
+    background-color: var(--color-bg);
+
+    font-size: 20px;
+    font-family: var(--font-family-primary);
+
+}
+
+.botoncitos:hover {
+    background-color: var(--color-bg-2);
+}
+
+.botoncitos:active {
+    background-color: var(--color-main-text);
+}
