@@ -1,4 +1,12 @@
 import { createButton } from "./button.js";
+const defaultMenuListElement = document.querySelector('.menu__list');
+export const defaultMenuListItems = [
+    {
+        classModifier: "active",
+        href: "/index.html",
+        value: "Inicio"
+    }
+]
 export const createMenuItem = ({classModifier = "", elementContent}) => {
     const menuItemElement = document.createElement("li");
     const className = "menu__item";
@@ -8,7 +16,8 @@ export const createMenuItem = ({classModifier = "", elementContent}) => {
     menuItemElement.appendChild(elementContent);
     return menuItemElement
 }
-export const createMenuList = ({parent,listItems}) => {
+export const createMenuList = ({parent = defaultMenuListElement,listItems = defaultMenuListItems}) => {
+    parent.innerHTML = '';
     listItems.forEach((navItem,i=0) => {
       const element = createButton(navItem)
       const menuItemElement = createMenuItem({classModifier:navItem.classModifier,elementContent:element});
