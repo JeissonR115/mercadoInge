@@ -1,4 +1,4 @@
-import { hideAndShowMenu, createMenuList, defaultMenuListItems } from './menu.js'
+import { hideAndShowMenu } from './menu.js'
 import { createFooter } from './footer.js';
 import { createDefaultHead } from './head.js';
 
