@@ -14,7 +14,7 @@ if (isset($_SESSION['user'])) {
     if ($user->userLogin($emailOrUserForm, $passwordForm)) {
         $userSession->setCurrentUser($emailOrUserForm);
         $user->setUser($emailOrUserForm);
-        header("Location: /pages/admin.html");
+        header("Location: /pages/products.js");
     } else {
         header("Location: /pages/login.html?error=1");
     }
