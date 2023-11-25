@@ -116,6 +116,36 @@
                 "alt": "imagen defecto"
             },
             "price": 15000
+        },
+        {
+            "classModifier": "queso",
+            "title": "Queso Gouda",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "img": {
+                "href": "https://via.placeholder.com/150",
+                "alt": "imagen defecto"
+            },
+            "price": 10000
+        },
+        {
+            "classModifier": "pan",
+            "title": "Pan Integral",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "img": {
+                "href": "https://via.placeholder.com/150",
+                "alt": "imagen defecto"
+            },
+            "price": 8000
+        },
+        {
+            "classModifier": "manzanas",
+            "title": "Manzanas Orgánicas",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "img": {
+                "href": "https://via.placeholder.com/150",
+                "alt": "imagen defecto"
+            },
+            "price": 12000
         }
     ]
 }

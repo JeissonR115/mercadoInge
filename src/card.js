@@ -40,14 +40,28 @@ const createCardElement = (
 
     return cardElement;
 }
-export const createCardList = ({ parent, listItems }) => {
+export const createProductCardElement = (
+    {
+        classModifier = "",
+        title = "",
+        description = "",
+        price=0,
+        img = {}
+    }
+) => {
+    const element = createCardElement({classModifier,title,description,img});
+    const className = "card"
+    const priceElement = document.createElement("p");
+    priceElement.classList.add(`${className}__price`);
+    priceElement.textContent = price;
+    element.appendChild(priceElement);
+    return element;
+}
+export const createCardList = ({ parent, listItems, elementCreatorFunction = createCardElement }) => {
     listItems.forEach((item, i = 0) => {
-        const menuItemElement = createCardElement({
-            classModifier: item.classModifier,
-            title:item.title,
-            description:item.description,
-            img:{href:item.img.href,alt:item.img.alt}
-        })
+        console.log(item)
+        const menuItemElement = elementCreatorFunction(item)
+        console.log(menuItemElement)
         parent.appendChild(menuItemElement)
     });
 }

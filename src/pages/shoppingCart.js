@@ -2,19 +2,14 @@ import { createMenuList,defaultMenuListItems} from '../menu.js';
 
 const menuList = [
     {
-        classModifier: "project",
-        href: "./#proyect",
-        value: "Proyecto"
+        classModifier: "products",
+        href: "/pages/products.html",
+        value: "Productos"
     },
     {
-        classModifier: "team",
-        href: "./#team",
-        value: "Nosotros"
-    },
-    {
-        classModifier:"login",
-        href: "./pages/login.html",
-        value: "Login"
+        classModifier: "carrito",
+        href: "/pages/shoppingCart.html",
+        value: "Carrito"
     }
 ];
 
