@@ -7,7 +7,7 @@ $userSession = new UserSession();
 // Verificar si hay un usuario en sesión
 if (isset($_SESSION['user'])) {
     $user->setUser($userSession->getCurrentUser());
-    header("Location: /pages/about-us.html");
+    header("Location: /pages/products.html");
 } elseif (isset($_POST['emailOrUser']) && isset($_POST['password'])) {
     $emailOrUserForm = $_POST['emailOrUser'];
     $passwordForm = $_POST['password'];
