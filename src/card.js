@@ -53,7 +53,7 @@ export const createProductCardElement = (
     const className = "card"
     const priceElement = document.createElement("p");
     priceElement.classList.add(`${className}__price`);
-    priceElement.textContent = price;
+    priceElement.textContent = price+'$';
     element.appendChild(priceElement);
     return element;
 }
