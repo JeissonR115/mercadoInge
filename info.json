@@ -146,6 +146,36 @@
                 "alt": "imagen defecto"
             },
             "price": 12000
+        },
+        {
+            "classModifier": "cereal",
+            "title": "Cereal Integral",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "img": {
+                "href": "https://via.placeholder.com/150",
+                "alt": "imagen defecto"
+            },
+            "price": 9000
+        },
+        {
+            "classModifier": "leche",
+            "title": "Leche Orgánica",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "img": {
+                "href": "https://via.placeholder.com/150",
+                "alt": "imagen defecto"
+            },
+            "price": 11000
+        },
+        {
+            "classModifier": "yogur",
+            "title": "Yogur Griego",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "img": {
+                "href": "https://via.placeholder.com/150",
+                "alt": "imagen defecto"
+            },
+            "price": 8000
         }
     ]
 }
