@@ -46,12 +46,12 @@ export const createFooter = (parent = document.querySelector('footer')) => {
                     <ul>
                         <li>
                             <a href="https://github.com/JeissonR115/Mercado" title="GitHub">
-                                <img src="../icons/github.svg" alt='GitHub'> Repositorio java
+                                <img src="/pictures/icons/github.svg" alt='GitHub'> Repositorio java
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/JeissonR115/mercadoInge" title="GitHub">
-                                <img src="../icons/github.svg" alt='GitHub'> Repositorio web
+                                <img src="/pictures/icons/github.svg" alt='GitHub'> Repositorio web
                             </a>
                         </li>
                     </ul>
