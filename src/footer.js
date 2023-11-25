@@ -1,6 +1,7 @@
 
 export const createFooter = (parent = document.querySelector('footer')) => {
-    parent.innerHTML = `
+    if (parent) {
+        parent.innerHTML = `
         <div class="footer-line"></div>
         <div class="footer-wrapper">
             <section class="footer-top">
@@ -61,5 +62,7 @@ export const createFooter = (parent = document.querySelector('footer')) => {
             </div>
         </div>
     `;
+    }
+
 }
 
